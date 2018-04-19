@@ -14,6 +14,8 @@ class SearchBar extends Component {
         // value of input is eq to state.
         // a controlled component has its value set by state.
         onChange={event => this.onInputChange(event.target.value)} />
+        // debatably superfluous ^ to have this callback and all that
+        // defined below, but wanted to DRY up use of "event.target.etc"
       </div>
     );
   }
